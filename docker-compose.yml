@@ -1,0 +1,11 @@
+services:
+  marex-stock-screener:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      EXCEL_PATH: "/app/Stock Screener.xlsx"
+      OUTPUT_SHEET: "extraction YF"
+      ENABLE_REFRESH: "false"
+    volumes:
+      - ./:/app

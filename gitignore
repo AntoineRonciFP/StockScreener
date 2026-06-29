@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.streamlit/secrets.toml
+*.log
+marex_stock_screener_view.csv
